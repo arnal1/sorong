@@ -84,8 +84,8 @@
                       <td><?= $d['alamat_ibadah']; ?></td>
                       <td><?= $d['liturgi_ibadah']; ?></td>
                       <td>
-                        <a href="../config/crud/edit.php?id=<?= $d['id'];?>" class="btn btn-warning">Edit</a>
-                        <a href="../config/crud/hapus.php?id=<?= $d['id'];?>" class="btn btn-danger">Hapus</a>
+                        <a href="editJadwal.php?id=<?= $d['id']; ?>" class="btn btn-warning">Edit</a>
+                        <a href="../config/crud/hapus.php?id=<?= $d['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin?');">Hapus</a>
                       </td>
                     </tr>
                     <?php } ?>
